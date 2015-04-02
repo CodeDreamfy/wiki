@@ -1,3 +1,7 @@
 baseurl: /
 encoding: utf-8
-baseroot: /wiki
+author: fengqiaogang
+email: fengqiaogang@163.com
+description: wiki
+keywords: wiki fengqiaogang fengqiaogang@163.com Steel.Von
+#baseroot: /wiki
