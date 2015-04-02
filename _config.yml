@@ -1,2 +1,3 @@
-baseurl: /wiki
+baseurl: /
 encoding: utf-8
+baseroot: /wiki
