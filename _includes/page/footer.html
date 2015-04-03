@@ -1,8 +1,23 @@
 {% include css/footer-css.html %}
 <div class="footer">
-    Created By : Steel.Von
-    <span>
-        <a href="{{ site.baseroot }}/address.html" target="_blank">联系我</a>
-    </span>
-    | 渝ICP备14004252号-4
+    <div class="footer-content">
+        <span class="Created-author">
+            Created By : Steel.Von
+        </span>
+        <span class="address">
+            <a href="{{ site.baseroot }}/address.html" target="_blank">联系我</a>
+        </span>
+        <span class="record">
+            | 渝ICP备14004252号-4
+        </span>
+    </div>
+    <script type="text/javascript">
+        +function () {
+            if (window.location.hostname == "fengqiaogang.github.io") {
+                seajs.use(["jquery"], function ($) {
+                    $(".record", ".footer").hide();
+                });
+            }
+        }();
+    </script>
 </div>
