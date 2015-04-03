@@ -3,28 +3,45 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset={{ site.encoding }}"/>
     <meta name="{{ site.author }} {{ site.email }}" content="{{ site.description }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta id="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no" name="viewport"/>
     <meta name="description" content="{{ site.description }}">
     <meta name="keywords" content="{{ site.keywords }}">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>{{ page.title }}－Svon's Blog</title>
     <link type="image/x-icon" rel="shortcut icon" href="http://www.hellojs.cn/images/fav.png">
-    <link rel="stylesheet" type="text/css" href="http://www.hellojs.cn/css/common/reset.css">
     <script type="text/javascript" src="http://www.hellojs.cn/js/modules/seajs/2.2.0/sea.js"></script>
-    {% include css/main-css.html %}
+    <!--main.css-->
+    <link rel="stylesheet" type="text/css" href="{{ site.static }}css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.static }}css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.static }}css/main.css">
 </head>
 <body>
-    {% include page/header.html %}
-    {% include page/nav.md %}
-    <div class="wrap-content">
+{% include page/header.html %}
+<div class="wrap-content">
+    <div class="wrap-max-width">
         <div class="title">
-            <h1>{{ page.title }}</h1>
+            <p>{{ page.title }}</p>
         </div>
         {{ content }}
+
     </div>
-    <script type="text/javascript" src="http://www.hellojs.cn/js/modules/config/wiki-config.js"></script>
-    {% include page/footer.html %}
+</div>
+<script type="text/javascript" src="http://www.hellojs.cn/js/modules/config/wiki-config.js"></script>
+{% include page/footer.html %}
+<script type="text/javascript">
+    /**
+     * Author fengqiaogang
+     */
+    seajs.config({
+        alias: {
+            "jquery": "{modules}/jquery/2.1.1/jquery.js"
+        }
+    });
+    +function () {
+        seajs.use(["jquery", "{{ site.static }}js/bootstrap.min.js"]);
+    }();
+</script>
 </body>
 　　
 </html>
