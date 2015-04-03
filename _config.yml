@@ -1,8 +1,12 @@
-baseurl: /
-encoding: utf-8
-author: fengqiaogang
-email: fengqiaogang@163.com
+
+markdown:    rdiscount
+
+baseurl:     /wiki
+encoding:    utf-8
+author:      fengqiaogang
+email:       fengqiaogang@163.com
 description: wiki
-keywords: wiki fengqiaogang fengqiaogang@163.com Steel.Von
-#baseroot:
-baseroot: /wiki
+keywords:    wiki fengqiaogang fengqiaogang@163.com Steel.Von
+baseroot:   /wiki/index.html
+
+regeneration: watch
