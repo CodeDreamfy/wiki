@@ -4,5 +4,5 @@ author: fengqiaogang
 email: fengqiaogang@163.com
 description: wiki
 keywords: wiki fengqiaogang fengqiaogang@163.com Steel.Von
-baseroot:
-#baseroot: /wiki
+#baseroot:
+baseroot: /wiki
