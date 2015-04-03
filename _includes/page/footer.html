@@ -13,9 +13,9 @@
     </div>
     <script type="text/javascript">
         +function () {
-            if (window.location.hostname == "fengqiaogang.github.io") {
+            if (window.location.hostname != "fengqiaogang.github.io") {
                 seajs.use(["jquery"], function ($) {
-                    $(".record", ".footer").hide();
+                    $(".record", ".footer").show();
                 });
             }
         }();
