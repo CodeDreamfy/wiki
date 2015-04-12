@@ -18,8 +18,7 @@ body > .header{ border-bottom: 1px solid #cccccc; z-index: 10; }
 .wrap-content .title p{
 	font-size: 1.6em; color: #000000; line-height: 30px; height: 30px; letter-spacing: 2px;
 }
-.wrap-content .post{ padding: 0; }
-.wrap-content .posts{ padding-left: 25px; padding-top: 25px; }
+.wrap-content .posts{ padding-top: 15px; }
 .wrap-content code{
 	display: block; margin-bottom: 10px; word-wrap: break-word; white-space: normal; font-size: 14px; line-height: 22px;
 }
