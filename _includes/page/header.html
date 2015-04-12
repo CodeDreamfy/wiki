@@ -7,16 +7,16 @@
                 <a class="brand" href="{{ site.rootpath }}" target="_self" title="Svon's Blog">Logo</a>
             </div>
             <ul class="nav">
-                <li class="active">
+                <li class="{{ page.home }}">
                     <a href="{{ site.rootpath }}" target="_self" title="首页">首页</a>
                 </li>
-                <li>
-                    <a href="#" target="_self" title="Link">分类</a>
+                <li class="{{ page.classify }}">
+                    <a href="{{ site.rootpath }}classify.html" target="_self" title="Link">分类</a>
                 </li>
-                <li>
-                    <a href="#" target="_self" title="Link">留言</a>
+                <li class="{{ page.message }}">
+                    <a href="{{ site.rootpath }}message.html" target="_self" title="Link">留言</a>
                 </li>
-                <li>
+                <li class="{{ page.address }}">
                     <a href="{{ site.rootpath }}address.html" target="_self" title="Link">关于</a>
                 </li>
             </ul>
