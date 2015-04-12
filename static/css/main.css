@@ -22,3 +22,4 @@ body > .header{ border-bottom: 1px solid #cccccc; z-index: 10; }
 .wrap-content code{
 	display: block; margin-bottom: 10px; word-wrap: break-word; white-space: normal; font-size: 14px; line-height: 22px;
 }
+.navbar .nav > li > a{ padding: 10px; }
