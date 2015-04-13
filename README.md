@@ -1,2 +1,2 @@
-# svon_blog
-Svon's blog
+# Svon's wiki
+Svon's wiki
