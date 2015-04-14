@@ -8,6 +8,7 @@
     <meta name="keywords" content="{{ site.keywords }}">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="baidu-site-verification" content="BvhKguqWv9" />
     <title>{{ page.title }}－Svon's Blog</title>
     <link type="image/x-icon" rel="shortcut icon" href="http://www.hellojs.cn/images/fav.png">
     <script type="text/javascript" src="http://www.hellojs.cn/js/modules/seajs/2.2.0/sea.js"></script>
@@ -17,17 +18,17 @@
     <link rel="stylesheet" type="text/css" href="{{ site.static }}css/main.css">
 </head>
 <body class="box-sizing">
-    {% include page/header.html %}
-    <div class="wrap-content box-sizing">
-        <div class="wrap-max-width">
-            <div class="title">
-                <p>{{ page.title }}</p>
-            </div>
-            {{ content }}
+{% include page/header.html %}
+<div class="wrap-content box-sizing">
+    <div class="wrap-max-width">
+        <div class="title">
+            <p>{{ page.title }}</p>
         </div>
+        {{ content }}
     </div>
-    <script type="text/javascript" src="http://www.hellojs.cn/js/modules/config/wiki-config.js"></script>
-    {% include page/footer.html %}
+</div>
+<script type="text/javascript" src="http://www.hellojs.cn/js/modules/config/wiki-config.js"></script>
+{% include page/footer.html %}
 <script type="text/javascript">
     /**
      * Author fengqiaogang
@@ -38,9 +39,14 @@
         }
     });
     +function () {
-        seajs.use(["jquery", "{{ site.static }}js/bootstrap.min.js"]);
+        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        var html = "%3Cspan id='cnzz_stat_icon_1254781108'%3E%3C/span%3E%3Cscript src='";
+        html += cnzz_protocol;
+        html += "s4.cnzz.com/stat.php%3Fid%3D1254781108%26online%3D1' type='text/javascript'%3E%3C/script%3E";
+        document.write("<div class='svon-cnzz' style='display:none;'>" + unescape(html) + "</div>");
     }();
 </script>
+
 </body>
 　　
 </html>
