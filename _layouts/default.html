@@ -13,10 +13,17 @@
     <link type="image/x-icon" rel="shortcut icon" href="http://www.hellojs.cn/images/fav.png">
     <script type="text/javascript" src="http://www.hellojs.cn/js/modules/seajs/2.2.0/sea.js"></script>
     <!--main.css-->
-    <link rel="stylesheet" type="text/css" href="{{ site.static }}css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.static }}css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.static }}css/main.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.static }}css/reset.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.static }}css/main.css" charset="utf-8">
+    <!--<link rel="stylesheet" type="text/css" href="{{ site.static }}css/pygments.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="{{ site.static }}css/syntax.css">-->
     <script type="text/javascript">
+        function getQueryString() {
+            var reg = new RegExp('(^|&)' + (arguments[0]) + '=([^&]*)(&|$)', 'i');
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
         //声明_czc对象:
         var _czc = window["_czc"] || [];
         //绑定siteid
@@ -45,13 +52,13 @@
             "jquery": "{modules}/jquery/2.1.1/jquery.js"
         }
     });
-    +function () {
-        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-        var html = "%3Cspan id='cnzz_stat_icon_1254781108'%3E%3C/span%3E%3Cscript src='";
-        html += cnzz_protocol;
-        html += "s4.cnzz.com/stat.php%3Fid%3D1254781108%26online%3D1' type='text/javascript'%3E%3C/script%3E";
-        document.write("<div class='svon-cnzz' style='display:none;'>" + unescape(html) + "</div>");
-    }();
+//    +function () {
+//        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+//        var html = "%3Cspan id='cnzz_stat_icon_1254781108'%3E%3C/span%3E%3Cscript src='";
+//        html += cnzz_protocol;
+//        html += "s4.cnzz.com/stat.php%3Fid%3D1254781108%26online%3D1' type='text/javascript'%3E%3C/script%3E";
+//        document.write("<div class='svon-cnzz' style='display:none;'>" + unescape(html) + "</div>");
+//    }();
 </script>
 
 </body>

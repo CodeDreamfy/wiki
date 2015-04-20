@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+/****************************
+ *  Reset.css
+ */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, abbr, address, cite, code, del, dfn, em, img, sub, sup, var, i, dl, dd, dt, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+article, aside, figure, footer, header, hgroup, nav, menu, section{
+	display: block;
+}
+ol, ul, li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	color: #4d4d4d;
+}
+a:active, a:visited{
+	/*color: #0066ab;*/
+}
+input, select{
+	vertical-align: middle;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	line-height: 1.5em;
+	font-size: 12px;
+	background: #ffffff;
+}
+a{
+	outline: none; /* for Forefox */
+	cursor: pointer;
+}
+a{
+	star: expression(this.onFocus=this.blur()); /* for Ie*/
+}
+.clearfix{
+	zoom: 1;
+	_height: 1px
+}
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden
+}
+input, textarea{ margin: 0; padding: 0; border: medium none; }

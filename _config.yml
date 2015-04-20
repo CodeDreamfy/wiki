@@ -1,4 +1,4 @@
-markdown:     rdiscount
+
 baseurl:      /wiki  #网站的跟路径
 
 source:      .       #源码路径
@@ -20,3 +20,8 @@ keywords:     wiki fengqiaogang fengqiaogang@163.com Steel.Von
 rootpath:     /wiki/
 static:       /wiki/static/
 #regeneration: watch
+
+
+pygments: true
+highlighter: pygments
+mardown: redcarpet

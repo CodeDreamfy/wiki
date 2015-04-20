@@ -7,5 +7,30 @@ message : ""
 address : ""
 ---
 <div>
-    敬请关注分类模块
+    <ul>
+        {% for category in site.categories %}
+        <li>
+            <h2>{{ category | first }}</h2>
+            <!--<span>{{ category | last | size }}</span>-->
+            <ul class="arc-list">
+                {% for post in category.last %}
+                <li>
+                    <a href="{{ site.baseurl }}{{ post.url }}">
+                        <span>{{ post.date | date:"%d/%m/%Y"}}：</span>
+                        <span>{{ post.title }}</span>
+                    </a>
+                </li>
+
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+
+        <script>
+            var dataStr = '{ {% for cat in site.categories %}{% if cat[0] != site.categories.first[0] %},{% endif %}"{{ cat[0] }}":[{% for post in cat[1] %}{% if post != cat[1].first %},{% endif %}{"url":"{{ site.baseurl }}{{post.url}}", "title":"{{post.title}}", "date":"{{post.date | date:"%d/%m/%Y"}}"}{% endfor %}]{% endfor %} }',
+                    data = JSON.parse(dataStr),
+                    curTag = getQueryString("cat"),
+                    archieves = data[curTag][0];
+        </script>
+    </ul>
 </div>
