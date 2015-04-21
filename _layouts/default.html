@@ -52,13 +52,15 @@
             "jquery": "{modules}/jquery/2.1.1/jquery.js"
         }
     });
-//    +function () {
-//        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-//        var html = "%3Cspan id='cnzz_stat_icon_1254781108'%3E%3C/span%3E%3Cscript src='";
-//        html += cnzz_protocol;
-//        html += "s4.cnzz.com/stat.php%3Fid%3D1254781108%26online%3D1' type='text/javascript'%3E%3C/script%3E";
-//        document.write("<div class='svon-cnzz' style='display:none;'>" + unescape(html) + "</div>");
-//    }();
+    +function () {
+        if(window.location.hostname != "192.168.0.105" && window.location.hostname != "127.0.0.1"){
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            var html = "%3Cspan id='cnzz_stat_icon_1254781108'%3E%3C/span%3E%3Cscript src='";
+            html += cnzz_protocol;
+            html += "s4.cnzz.com/stat.php%3Fid%3D1254781108%26online%3D1' type='text/javascript'%3E%3C/script%3E";
+            document.write("<div class='svon-cnzz' style='display:none;'>" + unescape(html) + "</div>");
+        }
+    }();
 </script>
 
 </body>
