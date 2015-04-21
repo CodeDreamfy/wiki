@@ -23,5 +23,5 @@ static:       /wiki/static/
 
 
 pygments: true
+markdown: kramdown
 highlighter: pygments
-mardown: redcarpet
