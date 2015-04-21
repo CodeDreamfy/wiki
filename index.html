@@ -11,7 +11,7 @@ address :
         {% for post in site.posts %}
         <li>
             <h3>
-                <span>{{ post | last | size }}</span>
+                <!--<span>{{ post | last | size }}</span>-->
                 <a href="{{ site.baseurl }}{{ post.url }}">
                     <span>{{ post.date | date:"%d/%m/%Y" }}：</span>
                     <span>{{ post.title }}</span>
