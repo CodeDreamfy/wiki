@@ -105,3 +105,9 @@ h1, h2, h3{
 	word-wrap:break-word;
 	white-space:inherit;
 }
+
+body > .other{
+	display: none;
+}
+
+
