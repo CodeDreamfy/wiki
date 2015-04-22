@@ -98,8 +98,8 @@ h1, h2, h3{
 	width: 100%; display: block;margin: 10px 0;zoom: 1;_zoom:1
 	box-sizing: border-box; -webkit-box-sizing: border-box;
 	padding: 5px;
-	background-color: rgba(4, 185, 246, 0.16667);
-	border:1px dashed rgba(0, 178, 179, 0.33333);
+	border: 1px solid #eaeaea;
+   	background-color: #f8f8f8;
 	border-radius: 6px;
 	box-shadow: 0 0 10px rgba(4, 185, 246, 0.16667);
 	word-wrap:break-word;
